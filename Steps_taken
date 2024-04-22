@@ -1,0 +1,17 @@
+# filter vcf file to only keep relevant individuals
+vcftools --vcf Wolbach_filtered.vcf.recode.vcf --keep <list of names>.txt --recode --recode-INFO-all --out <output name>
+
+# compress and filter the files
+
+bgzip <vcf file>.recode.vcf
+bcftools index <vcf file>.recode.vcf.gz
+
+# Construct a consensus sequence using the reference genome
+
+cat <reference>.fa | bcftools consensus <vcf file>.recode.vcf.gz > <output name>.fa
+
+# Filter the consenus to only span the 16S rRNA gene
+
+samtools faidx <consenus>.fa
+samtools faidx <consensus>.fa ptg000054l:478456-479959 > <output name>.fa
+
