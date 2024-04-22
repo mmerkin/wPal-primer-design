@@ -12,4 +12,6 @@ Plan:
 Still to do:
 
 5) Produce a restriction map of the 16S rRNA genes
-6) Identify SNPs that produce differently sized fragments when exposed to a particular restriction enzyme
+6) Identify SNPs found within a restriction site that can be used to distinguish the clades
+7) Design primers either side of that restriction site to produce fragments of different sizes
+8) Check that the primers are suitable for use (eg appropriate melting temp, site specificity) 
