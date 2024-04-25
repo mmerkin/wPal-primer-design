@@ -15,3 +15,30 @@ cat <reference>.fa | bcftools consensus <vcf file>.recode.vcf.gz > <output name>
 samtools faidx <consenus>.fa
 samtools faidx <consensus>.fa ptg000054l:478456-479959 > <output name>.fa
 
+
+samtools faidx blue_consensus.fa ptg000054l:576000-577500 > blue_576732.fa
+samtools faidx pink_consensus.fa ptg000054l:576000-577500 > pink_576732.fa
+samtools faidx purple_consensus.fa ptg000054l:576000-577500 > purple_576732.fa
+samtools faidx blue_basal_consensus.fa ptg000054l:576000-577500 > blue_basal_576732.fa
+
+samtools faidx blue_consensus.fa ptg000054l:1201500-1203000 > blue_1202229.fa
+samtools faidx pink_consensus.fa ptg000054l:1201500-1203000 > pink_1202229.fa
+samtools faidx purple_consensus.fa ptg000054l:1201500-1203000 > purple_1202229.fa
+samtools faidx blue_basal_consensus.fa ptg000054l:1201500-1203000 > blue_basal_1202229.fa
+
+samtools faidx blue_consensus.fa ptg000054l:53000-54500 > blue_53786.fa
+samtools faidx pink_consensus.fa ptg000054l:53000-54500 > pink_53786.fa
+samtools faidx purple_consensus.fa ptg000054l:53000-54500 > purple_53786.fa
+samtools faidx blue_basal_consensus.fa ptg000054l:53000-54500 > blue_basal_53786.fa
+
+samtools faidx blue_consensus.fa ptg000054l:763000-764500 > blue_763842.fa
+samtools faidx pink_consensus.fa ptg000054l:763000-764500 > pink_763842.fa
+samtools faidx purple_consensus.fa ptg000054l:763000-764500 > purple_763842.fa
+samtools faidx blue_basal_consensus.fa ptg000054l:763000-764500 > blue_basal_763842.fa
+
+samtools faidx blue_consensus.fa ptg000054l:364000-365500 > blue_364792.fa
+samtools faidx pink_consensus.fa ptg000054l:364000-365500 > pink_364792.fa
+samtools faidx purple_consensus.fa ptg000054l:364000-365500 > purple_364792.fa
+samtools faidx blue_basal_consensus.fa ptg000054l:364000-365500 > blue_basal_364792.fa
+
+
