@@ -10,10 +10,9 @@ bcftools index <vcf file>.recode.vcf.gz
 
 cat <reference>.fa | bcftools consensus <vcf file>.recode.vcf.gz > <output name>.fa
 
-# Filter the consenus to only span the 16S rRNA gene
+# Filter the consenus to only span the regions surrounding the SNP of interest
 
 samtools faidx <consenus>.fa
-samtools faidx <consensus>.fa ptg000054l:478456-479959 > <output name>.fa
 
 
 samtools faidx blue_consensus.fa ptg000054l:576000-577500 > blue_576732.fa
